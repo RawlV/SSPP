@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="SSPP.view.RegistroController">
+
+    <top>
+        <Button text="Atrás" style="-fx-background-color: lightgray;" onAction="#volverAlMenu"
+                BorderPane.alignment="TOP_RIGHT" />
+    </top>
+
+    <center>
+        <GridPane hgap="10" vgap="10" alignment="CENTER">
+            <Label text="Nombres:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="nombresField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Apellidos:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="apellidosField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Tipo de Documento:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <ComboBox fx:id="tipoDocumentoComboBox" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Documento:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="documentoField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label text="Fecha de Nacimiento:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <DatePicker fx:id="fechaNacimientoPicker" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+            <Label text="Condena (años):" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <TextField fx:id="condenaField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+            <Label text="Pena:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <TextField fx:id="penaField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+            <Label text="Conducta:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <Slider fx:id="conductaSlider" min="1" max="100" value="50" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="conductaLabel" text="50" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+        </GridPane>
+    </center>
+
+    <bottom>
+        <Button text="Guardar" style="-fx-font-size: 16;" onAction="#guardarPreso"
+                BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="SSPP.view.InicioController">
+
+    <top>
+        <Button text="Cerrar Sesión" style="-fx-background-color: red; -fx-text-fill: white;"
+                onAction="#cerrarSesion" BorderPane.alignment="TOP_RIGHT" />
+    </top>
+
+    <center>
+        <VBox spacing="20" alignment="CENTER">
+            <Button text="Registro de Presos" onAction="#abrirRegistro" style="-fx-font-size: 16;" />
+            <Button text="Visualización de Presos" onAction="#abrirVisualizacion" style="-fx-font-size: 16;" />
+            <Button text="Modificación de Datos" onAction="#abrirModificacion" style="-fx-font-size: 16;" />
+        </VBox>
+    </center>
+</BorderPane>
